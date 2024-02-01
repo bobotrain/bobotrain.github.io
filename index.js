@@ -152,7 +152,11 @@ materialKit = {
     }
   }, 17)
 };
-
+// HTML에서 이미지를 클릭했을 때 실행될 함수를 지정합니다.
+function imageClicked(imageURL) {
+  // 추출한 이미지 URL을 이동하는 페이지로 전달합니다.
+  window.location.href = "이동하는페이지의URL?imageURL=" + encodeURIComponent(imageURL);
+}
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
@@ -234,3 +238,9 @@ var BrowserDetect = {
   ]
 
 };
+
+// HTML에서 이미지를 클릭했을 때 실행될 함수를 지정합니다.
+function imageClicked(imageURL) {
+  // 추출한 이미지 URL을 이동하는 페이지로 전달합니다.
+  window.location.href = "detail.html?imageURL=" + encodeURIComponent(imageURL);
+}
