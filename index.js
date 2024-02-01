@@ -242,5 +242,5 @@ var BrowserDetect = {
 // HTML에서 이미지를 클릭했을 때 실행될 함수를 지정합니다.
 function imageClicked(imageURL) {
   // 추출한 이미지 URL을 이동하는 페이지로 전달합니다.
-  window.location.href = "detail.html?imageURL=" + encodeURIComponent(imageURL);
+  window.location.href = encodeURIComponent(imageURL);
 }
