@@ -88,26 +88,6 @@
                             - 중앙대학교 경영학부 글로벌 금융학과 졸업<br>
                             <br>
                         </span>
-                        <div class="card text-center">
-                          <div class="card-header card-header-rose">
-                            <ul class="nav nav-tabs">
-                              <li class="nav-item">
-                                <a class="nav-link active" href="javascript:;">Active</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="javascript:;">Link</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link disabled" href="javascript:;">Disabled</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="card-body">
-                            <h4 class="card-title">Special title treatment</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="javascript:;" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
                         <span><h3>🙋‍♂️ Introduce</h3><br>
                             - 보험 에이전시에서 ERP 개발자로 일했습니다.
                             - KB라이프생명 클라우드 병합 SI 프로젝트를 경험했습니다<br>
@@ -120,18 +100,51 @@
                             - 개인 블로그 및 운동유튜브, 운동스타그램을 운영합니다.<br>
                             <br>
                         </span>
-                        <span><h3>👨‍💻 Skill</h3><br>
-                          <span class="badge badge-primary">Primary</span>
-                          <span class="badge badge-info">Info</span>
-                          <span class="badge badge-success">Success</span>
-                          <span class="badge badge-danger">Danger</span>
-                          <span class="badge badge-warning">Warning</span>
-                          <span class="badge badge-default">Default</span>
+                        <span><h3>👨‍💻 Skill</h3>
+                          <h6>※  클릭하여 자세한 내용을 확인하세요</h6>
+                          <span class="badge badge-primary" onclick="openPopup('Java')">Java</span>
+                          <span class="badge badge-primary" onclick="openPopup('Python')">Python</span>
+                          <br>
+                          <span class="badge badge-info" onclick="openPopup('JSP/Servlet')">JSP/Servlet</span>
+                          <span class="badge badge-info"onclick="openPopup('SpringBoot')">SpringBoot</span>
+                          <span class="badge badge-info"onclick="openPopup('Django')">Django</span>
+                          <span class="badge badge-info"onclick="openPopup('Xplatform/Nexacro')">Xplatform/Nexacro</span>
+                          <br>
+                          <span class="badge badge-success"onclick="openPopup('Oracle')">Oracle</span>
+                          <span class="badge badge-success"onclick="openPopup('MySQL')">MySQL</span>
+                          <span class="badge badge-success"onclick="openPopup('Firebase')">Firebase</span>
+                          <span class="badge badge-success"onclick="openPopup('AWS EC2')">AWS EC2</span>
+                          <span class="badge badge-success"onclick="openPopup('Elastic Beanstalk')">Elastic Beanstalk</span>
+                          <span class="badge badge-success"onclick="openPopup('Linux')">Linux</span>
+                          <br>
+                          <span class="badge badge-warning"onclick="openPopup('JPA')">JPA</span>
+                          <span class="badge badge-warning"onclick="openPopup('JDBC')">JDBC</span>
+                          <span class="badge badge-warning"onclick="openPopup('Selenium')">Selenium</span>
+                          <span class="badge badge-warning"onclick="openPopup('Pandas')">Pandas</span>
+                          <span class="badge badge-warning"onclick="openPopup('Excel VisualBasic')">Excel VisualBasic</span>
+                          <span class="badge badge-warning"onclick="openPopup('Excel Data')">Excel Data</span>
+                          <span class="badge badge-warning"onclick="openPopup('Google SpreadSheet')">Google SpreadSheet</span>
+                          <span class="badge badge-warning"onclick="openPopup('PPT')">PPT</span>
                           <br>
                       </span>
 
+
+                      <!-- 팝업 -->
+                      <div class="popup-overlay" style="display: none;">
+                        <div class="popup-content">
+                          <div class="popup-close">
+                            <a href="javascript:void(0)" onclick="closePopup()">닫기</a>
+                          </div>
+                          <div class="popup-text">
+                            <h3 id="popup-title"></h3>
+                            <p id="popup-description"></p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
+
+                
 				<div class="row">
 					<div class="col-md-6 ml-auto mr-auto">
                         <div class="profile-tabs">
@@ -157,7 +170,7 @@
                           </ul>
                         </div>
     	    	</div>
-            </div>
+          </div>
         
           <div class="tab-content tab-space">
             <div class="tab-pane active text-center gallery" id="career">

@@ -244,3 +244,29 @@ function imageClicked(imageURL) {
   // 추출한 이미지 URL을 이동하는 페이지로 전달합니다.
   window.location.href = encodeURIComponent(imageURL);
 }
+
+
+//팝업관련내용
+function openPopup(buttonText) {
+  var titleElement = document.querySelector('#popup-title');
+  var descriptionElement = document.querySelector('#popup-description');
+  
+  // 각 버튼에 대한 내용을 설정
+  if (buttonText === 'Java') {
+    titleElement.textContent = 'Java';
+    descriptionElement.textContent = 'Java에 관련된 내용을 여기에 작성하세요.';
+  } else if (buttonText === 'Python') {
+    titleElement.textContent = 'Python';
+    descriptionElement.textContent = 'Python에 관련된 내용을 여기에 작성하세요.';
+  } else if (buttonText === 'JSP/Servlet') {
+    titleElement.textContent = 'JSP/Servlet';
+    descriptionElement.textContent = 'JSP/Servlet에 관련된 내용을 여기에 작성하세요.';
+  }
+  // 나머지 버튼들에 대한 내용도 동일한 방식으로 설정
+  
+  document.querySelector('.popup-overlay').style.display = 'flex';
+}
+
+function closePopup() {
+  document.querySelector('.popup-overlay').style.display = 'none';
+}
