@@ -1,10 +1,11 @@
 
-
-//팝업(모달)관련내용
+//전역변수 설정
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
+var modalImg = document.querySelector('#img01');
 
 
+//모달 내용 관련
 function openPopup(topic) {
   var modalTitle = document.getElementById("modalTitle");
   var modalContent = document.getElementById("modalContent");
@@ -70,12 +71,44 @@ function openPopup(topic) {
   modal.style.display = "block";
 }
 
+
+
+
+
+
+
+//모달 이미지 관련
+function openImg(topic) {
+  var imgSrc;
+   if (topic === "DB 스키마") {
+   // 모달에 이미지 삽입
+   imgSrc = "/img/DB스키마.png";
+   }
+   modalImg .setAttribute('src', imgSrc);
+   // 모달 보이기
+   modal.style.display = 'block';
+ }
+ 
+
+
+
+
+ //모달 종료
+
 span.onclick = function() {
   modal.style.display = "none";
+  //모달 초기화
+  modalTitle.textContent = "";
+  modalContent.textContent = "";
+  modalImg.setAttribute("src", "");
 }
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    //모달 초기화
+    modalTitle.textContent = "";
+    modalContent.textContent = "";
+    modalImg.setAttribute("src", "");
   }
 }
