@@ -105,29 +105,35 @@
 
                 <div style="display: flex; justify-content: center; flex-wrap: wrap;">
                     <div class="image-container">
-                        <div class="image-title">DB 스키마</div>
-                        <img src="/img/DB스키마.png" class="rounded imgSize rounding"  onclick="openPopup('DB 스키마')">
+                        <div class="image-title transition" onclick="openPopup('DB 스키마')">DB 스키마</div>
+                        <img src="/img/DB스키마.png" class="rounded imgSize rounding" onclick="openImg('DB 스키마')">
+                        <!-- 이미지 조회용 모달 -->
+                        <div class="modal">
+                            <img class="modal_content" id="img01">
+                          </div>
                         
                     </div>
                     <div class="image-container">
-                        <div class="image-title">Swagger</div>
-                        <img src="/img/swagger.png" class="rounded imgSize rounding"  onclick="openPopup('DB 스키마')">
+                        <div class="image-title transition">DB 설계서</div>
+                        <img src="/img/DB설계서.png" class="rounded imgSize rounding"  onclick="openPopup('DB 설계서')">
                         
                     </div>
                     <div class="image-container">
-                        <div class="image-title">DB 스키마</div>
-                        <img src="/img/DB스키마.png" class="rounded imgSize rounding"  onclick="openPopup('DB 스키마')"">
-                        
+                        <div class="image-title transition">Swagger</div>
+                        <img src="/img/swagger.png" class="rounded imgSize rounding"  onclick="openPopup('swagger')">
                     </div>
+                    
                 </div>
+                <!-- 설명용 모달 -->
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                       <span class="close">&times;</span>
                       <h2 id="modalTitle"></h2>
                       <p id="modalContent"></p>
                     </div>
-                  </div>
+                </div>
 
+               
 
 
             <div class="row">
