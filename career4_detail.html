@@ -100,25 +100,33 @@
                           - Restful한 api형식으로 협업하였고, swagger로 관리했습니다.</span>
                     </div>
                 </div>
+
                 <div style="height:40px;"></div>
 
-                <div style="display: flex; justify-content: left;">
+                <div style="display: flex; justify-content: center; flex-wrap: wrap;">
                     <div class="image-container">
-                        <img src="/img/DB스키마.png" class="rounded imgSize">
+                        <div class="image-title">DB 스키마</div>
+                        <img src="/img/DB스키마.png" class="rounded imgSize rounding"  onclick="openPopup('DB 스키마')">
+                        
                     </div>
                     <div class="image-container">
-                        <img src="/img/DB스키마.png" class="rounded imgSize">
+                        <div class="image-title">Swagger</div>
+                        <img src="/img/swagger.png" class="rounded imgSize rounding"  onclick="openPopup('DB 스키마')">
+                        
                     </div>
                     <div class="image-container">
-                        <img src="/img/DB스키마.png" class="rounded imgSize">
+                        <div class="image-title">DB 스키마</div>
+                        <img src="/img/DB스키마.png" class="rounded imgSize rounding"  onclick="openPopup('DB 스키마')"">
+                        
                     </div>
                 </div>
-                <!-- 모달 -->
-                <div id="modal" class="modal">
-                    <span class="close">&times;</span>
-                    <img src="" alt="큰 이미지" id="modal-image">
-                    <div id="caption" class="caption"></div>
-                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <h2 id="modalTitle"></h2>
+                      <p id="modalContent"></p>
+                    </div>
+                  </div>
 
 
 
@@ -142,6 +150,7 @@
   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="detail.js"></script>
 
    
 
