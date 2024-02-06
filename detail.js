@@ -35,7 +35,7 @@ function openPopup(topic) {
 <p>▶ NULL여부와 EXTRA 타입, 데이터 타입, 데이터 크기 역시 보기 쉽게 정리했습니다.</p>
 `;
     modalContent.innerHTML =content;
-  } else if (topic === "swagger") {
+  } else if (topic === "Swagger") {
     modalTitle.innerHTML = "Swagger";
     const content = `
 <p>『프론트와의 협업을 위해 api 명세를 Swagger로 관리했습니다.』</p>
@@ -83,7 +83,13 @@ function openImg(topic) {
    if (topic === "DB 스키마") {
    // 모달에 이미지 삽입
    imgSrc = "/img/DB스키마.png";
+   }else if(topic === "DB 설계서") {
+    imgSrc = "/img/DB설계서.png";
+   }else if(topic === "swagger") {
+    imgSrc = "/img/swagger.png";
    }
+
+
    modalImg .setAttribute('src', imgSrc);
    // 모달 보이기
    modal.style.display = 'block';
