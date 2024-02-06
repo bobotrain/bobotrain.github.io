@@ -64,7 +64,16 @@ function openPopup(topic) {
     modalContent.innerHTML = "Python 관련 내용을 여기에 작성합니다.";
   } else if (topic === "JSP/Servlet") {
     modalTitle.innerHTML = "JSP/Servlet";
-    modalContent.innerHTML = "JSP/Servlet 관련 내용을 여기에 작성합니다.";
+    const content = `
+    <p>『Spring 프레임워크를 사용하지 않고 <strong>반응형 웹</strong>을 개발한 경험이 있습니다.』</p>
+
+    <p>▶ SERVLET으로만 웹을 구현해 보며, 유지보수를 위한 객체화와 프레임워크의 필요성을 느꼈습니다.</p>
+    
+    <p>▶ <strong>싱글톤 방식과 MVC 모델 2 방식</strong>을 학습하고 프로젝트에 적용한 경험이 있습니다.</p>
+
+    <p>▶ MODEL / VIEW에 해당하는 여러 JSP파일들 / Controller에 해당하는 DAO파일들의 역할과 상호작용을 이해했습니다.</p>
+`;
+    modalContent.innerHTML =content;
   }
   // 나머지 버튼들에 대한 처리도 동일하게 추가
 
