@@ -61,8 +61,29 @@ function openPopup(topic) {
     modalContent.innerHTML =content;
   } else if (topic === "Python") {
     modalTitle.innerHTML = "Python";
-    modalContent.innerHTML = "Python 관련 내용을 여기에 작성합니다.";
-  } else if (topic === "JSP/Servlet") {
+    const content = `
+<p>『Phython을 사용하여 쇼핑몰 자동화 서비스를 개발했습니다.』</p>
+
+<p>▶ phython의 <strong>Selenium</strong>을 응용하여 쇼핑몰 판매자들을 위한 통합관리서비스를 개발했습니다.</p>
+
+<p>▶ <strong>multi thread구조</strong>를 도입하여 각 모듈별 기능성을 높혔습니다.</p>
+
+<p>▶ NSIS를 사용하여 Setup구조를 만들고 <strong>배포</strong>하였습니다. </p>
+`;
+    modalContent.innerHTML =content;
+  } else if (topic === "Xplatform/Nexacro") {
+    modalTitle.innerHTML = "Xplatform/Nexacro";
+    const content = `
+<p>『X-platform과 Nexacro를 사용하여 화면개발을 할 수 있습니다.』</p>
+
+<p>▶ 해당 프론트 프레임워크를 사용하여 보험사 에이전시(GA제휴사)를 위한 ERP시스템을 구축해본 경험이 있습니다.</p>
+
+<p>▶ UbiDesigner와 같은 ‘출력’만을 위한 프린팅 프로그램을 자사 솔루션에 Mash-up해본 경험이 있습니다.</p>
+
+<p>▶ 동적 데이터 출력이 가능합니다. 컴포넌트 구조에 대해 이해하고 있습니다.</p>
+`;
+    modalContent.innerHTML =content;
+  }else if (topic === "JSP/Servlet") {
     modalTitle.innerHTML = "JSP/Servlet";
     const content = `
     <p>『Spring 프레임워크를 사용하지 않고 <strong>반응형 웹</strong>을 개발한 경험이 있습니다.』</p>
