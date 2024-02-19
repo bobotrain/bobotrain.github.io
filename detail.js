@@ -83,6 +83,32 @@ function openPopup(topic) {
 <p>▶ 동적 데이터 출력이 가능합니다. 컴포넌트 구조에 대해 이해하고 있습니다.</p>
 `;
     modalContent.innerHTML =content;
+  }else if (topic === "codeimg") {
+    modalTitle.innerHTML = "Write backend code";
+    const content = `
+<p>『Spring 프레임워크 + JPA + Mysql 연동을 통해 백엔드 코드를 작성했습니다.』</p>
+
+<p>▶ DAO/Controller/Service/Repository로 구성되는 MVC패턴에 입각하여 코드를 작성했습니다.</p>
+
+<p>▶ 재사용성의 고려를 위해 도메인 기반 레이어 구조를 채택했고, 객체화(BaseException 같은 공통 서식 분리)에 집중했습니다.</p>
+
+<p>▶ 다이내믹 이미지 출력 및 효율적인 캐시 관리를 위한 REDIS도입, 트위터/카카오 API 도입 등 RESTAPI기반 협업을 진행했습니다. </p>
+
+<p>▶ 서버 가용성 관리를 통해 서버가 터지는 오류 발견 -> DB서버와 실행서버의 분리 + 서버 스펙 t3.medium으로의 업그레이드를 통해 문제 해결 </p>
+`;
+    modalContent.innerHTML =content;
+  }else if (topic === "AWS") {
+    modalTitle.innerHTML = "AWS EC2+S3를 이용한 CI/CD 배포";
+    const content = `
+<p>『AWS EC2(백엔드)+ S3 버킷(프론트)+ DOCKER 컨테이너를 이용한 MYSQL DB/REDIS를 사용합니다.』</p>
+
+<p>▶ 기본적인 고정IP 네트워크 구조를 이해하고 AWS EC2로 (우분투)백그라운드 실행을 할 수 있습니다. </p>
+
+<p>▶ S3버킷을 활용한 정적 호스팅이 가능합니다(프론트 코드 배포).</p>
+
+<p>▶ SSL(X-SHELL)및 FTP의 사용과 도커 컨테이너 구성, Jar 빌드 및 실행이 가능합니다.</p>
+`;
+    modalContent.innerHTML =content;
   }else if (topic === "JSP/Servlet") {
     modalTitle.innerHTML = "JSP/Servlet";
     const content = `
@@ -117,6 +143,10 @@ function openImg(topic) {
     imgSrc = "/img/DB설계서.png";
    }else if(topic === "swagger") {
     imgSrc = "/img/swagger.png";
+   }else if(topic === "codeimg") {
+    imgSrc = "/img/codeimg.jpg";
+   }else if(topic === "AWS") {
+    imgSrc = "/img/AWS.jpg";
    }
 
 
