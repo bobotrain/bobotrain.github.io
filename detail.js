@@ -93,8 +93,6 @@ function openPopup(topic) {
 <p>▶ 재사용성의 고려를 위해 도메인 기반 레이어 구조를 채택했고, 객체화(BaseException 같은 공통 서식 분리)에 집중했습니다.</p>
 
 <p>▶ 다이내믹 이미지 출력 및 효율적인 캐시 관리를 위한 REDIS도입, 트위터/카카오 API 도입 등 RESTAPI기반 협업을 진행했습니다. </p>
-
-<p>▶ 서버 가용성 관리를 통해 서버가 터지는 오류 발견 -> DB서버와 실행서버의 분리 + 서버 스펙 t3.medium으로의 업그레이드를 통해 문제 해결 </p>
 `;
     modalContent.innerHTML =content;
   }else if (topic === "AWS") {
@@ -107,6 +105,8 @@ function openPopup(topic) {
 <p>▶ S3버킷을 활용한 정적 호스팅이 가능합니다(프론트 코드 배포).</p>
 
 <p>▶ SSL(X-SHELL)및 FTP의 사용과 도커 컨테이너 구성, Jar 빌드 및 실행이 가능합니다.</p>
+
+<p>▶ 서버 가용성 관리를 통해 서버가 터지는 오류 발견 -> DB서버와 실행서버의 분리 + 서버 스펙 t3.medium으로의 업그레이드를 통해 문제 해결 </p>
 `;
     modalContent.innerHTML =content;
   }else if (topic === "JSP/Servlet") {
@@ -121,6 +121,34 @@ function openPopup(topic) {
     <p>▶ MODEL / VIEW에 해당하는 여러 JSP파일들 / Controller에 해당하는 DAO파일들의 역할과 상호작용을 이해했습니다.</p>
 `;
     modalContent.innerHTML =content;
+  }else if (topic === "ERP") {
+    modalTitle.innerHTML = "GA 영업관리 시스템 'GAIA'운영";
+    const content = `
+    <p>『CS를 포함한 제휴사별 <strong>솔루션 커스터마이징</strong> 및 신규 프로젝트를 진행했습니다.』</p>
+
+    <p>▶ Front-end 프레임워크인 X-platform을 이용하여 컴포넌트/그리드 기반 화면 제작이 가능합니다.</p>
+    
+    <p>▶ Bind기능과 동적조회 및 다양한 상황별 화면을 제작했습니다.</p>
+
+    <p>▶ JS기반 동작 스크립트들을 작성할 수 있고, ORACLE과 연동된 RDBMS 연결을 JSP/SERVLET으로 구현했습니다(차후 Mybatis 도입).</p>
+`;
+    modalContent.innerHTML =content;
+    var imageSources = [
+      "/img/ERP2.jpg",
+      "/img/ERP3.jpg",
+      "/img/ERP4.jpg",
+      "/img/ERP5.jpg",
+      "/img/ERP6.jpg",
+      "/img/ERP7.jpg",
+      "/img/ERP8.jpg",
+      "/img/ERP9.jpg"
+    ];
+    
+    for (var i = 0; i < imageSources.length; i++) {
+      var img = document.createElement("img");
+      img.src = imageSources[i];
+      modalContent.appendChild(img);
+    }
   }
   // 나머지 버튼들에 대한 처리도 동일하게 추가
 
@@ -136,8 +164,8 @@ function openPopup(topic) {
 //모달 이미지 관련
 function openImg(topic) {
   var imgSrc;
+  // 모달에 이미지 삽입
    if (topic === "DB 스키마") {
-   // 모달에 이미지 삽입
    imgSrc = "/img/DB스키마.png";
    }else if(topic === "DB 설계서") {
     imgSrc = "/img/DB설계서.png";
@@ -147,6 +175,8 @@ function openImg(topic) {
     imgSrc = "/img/codeimg.jpg";
    }else if(topic === "AWS") {
     imgSrc = "/img/AWS.jpg";
+   }else if(topic === "ERP") {
+    imgSrc = "/img/ERP.jpg";
    }
 
 
